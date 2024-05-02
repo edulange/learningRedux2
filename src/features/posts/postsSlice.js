@@ -1,8 +1,19 @@
 import { createSlice, nanoid } from '@reduxjs/toolkit' //nanoID vai importar um randomID
+import { sub } from 'date-fns'
 
 const initialState = [
-	{ id: '1', title: 'Learning reduxtoolkit', content: "I've hear a good story" },
-	{ id: '2', title: 'slices.......', content: "I've hear a good story" },
+	{
+		id: '1',
+		title: 'Learning reduxtoolkit',
+		content: "I've hear a good story",
+		date: sub(new Date(), { minutes: 10 }).toISOString(),
+	},
+	{
+		id: '2',
+		title: 'slices.......',
+		content: "I've hear a good story",
+		date: sub(new Date(), { minutes: 5 }).toISOString(),
+	},
 ]
 
 const postsSlice = createSlice({
@@ -19,7 +30,8 @@ const postsSlice = createSlice({
 						id: nanoid(),
 						title,
 						content,
-						userId
+						date: new Date().toISOString(),
+						userId,
 					},
 				}
 			},
