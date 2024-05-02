@@ -1,4 +1,4 @@
-import { createSlice, nanoid } from '@reduxjs/toolkit'
+import { createSlice, nanoid } from '@reduxjs/toolkit' //nanoID vai importar um randomID
 
 const initialState = [
 	{ id: '1', title: 'Learning reduxtoolkit', content: "I've hear a good story" },
@@ -13,12 +13,13 @@ const postsSlice = createSlice({
 			reducer(state, action) {
 				state.push(action.payload)
 			},
-			prepare(title, content) {
+			prepare(title, content, userId) {
 				return {
 					payload: {
 						id: nanoid(),
 						title,
 						content,
+						userId
 					},
 				}
 			},
