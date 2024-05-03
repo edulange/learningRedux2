@@ -1,1 +1,3 @@
-https://youtu.be/NqzdVN2tyvQ?si=DMRCyd-jMApgV80Q&t=3855
+https://youtu.be/NqzdVN2tyvQ?si=hPJVkQs5TN_Qs49n&t=3950
+
+thunk significa 'a piece of code taht does some delayed work'

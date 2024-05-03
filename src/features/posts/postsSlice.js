@@ -1,7 +1,13 @@
 import { createSlice, nanoid } from '@reduxjs/toolkit' //nanoID vai importar um randomID
 import { sub } from 'date-fns'
 
-const initialState = [
+const initialState = {
+	posts: [],
+	status: 'idle', //'idle, 
+	error: null
+}
+
+/* const initialState = [
 	{
 		id: '1',
 		title: 'Learning reduxtoolkit',
@@ -28,7 +34,7 @@ const initialState = [
 			coffee: 0,
 		},
 	},
-]
+] */
 
 const postsSlice = createSlice({
 	name: 'posts',
