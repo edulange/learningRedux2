@@ -1,12 +1,16 @@
 import { Outlet } from 'react-router-dom'
+import Header from './Header'
 
 // Se tivesse algum Header ou Footer ele seria incluido aqui.
 
 const Layout = () => {
 	return (
-		<main className='App'>
-			<Outlet />
-		</main>
+		<>
+			<Header />
+			<main className='App'>
+				<Outlet />
+			</main>
+		</>
 	)
 }
 
