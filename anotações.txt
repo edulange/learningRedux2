@@ -1,4 +1,6 @@
+https://youtu.be/NqzdVN2tyvQ?si=c0hg51MhD7DL9a7P&t=6872
 
+cansei.
 thunk significa 'a piece of code taht does some delayed work'
 serve para utilizar async redux
 
